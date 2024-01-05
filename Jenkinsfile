@@ -21,7 +21,7 @@ stage("Checkout from SCM"){
       }
 }
     stage("Test Application"){
-       stepd {
+       steps {
          sh "mvn test"
        }
     }
