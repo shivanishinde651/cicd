@@ -1,4 +1,4 @@
 FROM tomcat:latest
 RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
-#COPY /webapp/target/*.war /usr/local/tomcat/webapps
-COPY --from=build /home/app/target/war_name.war app.war
+COPY /webapp/target/*.war /usr/local/tomcat/webapps
+
